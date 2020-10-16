@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>SWAP THE CONTENT OF TWO PARAGRAPHS</title>
+    </head>
+    <body>
+        <p id="para1">JAVASCRIPT</p>
+        <p id="para2">HTML</p>
+        <button id='btn'>SWAP CONTENT</button>
+        <script type="text/javascript">
+         document.getElementById('btn').onclick = function() {
+                p1 = document.getElementById('para1');
+                p2 = document.getElementById('para2');
+                p1Content=p1.innerText;
+                p2Content=p2.innerText
+                p1.innerText = p2Content;
+                p2.innerText = p1Content;
+            }     
+        </script>
+    </body>
+</html>
